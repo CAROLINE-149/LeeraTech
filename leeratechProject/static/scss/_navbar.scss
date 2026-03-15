@@ -1,0 +1,16 @@
+@use 'variables';
+
+.navbar {
+  background-color: variables.$success;
+  color: variables.$warning;
+  padding: variables.$spacer;
+  
+
+  .navbar-brand {
+    font-weight: variables.$heading-font-weight;
+    font-family: variables.$font-family-base;
+    color: variables.$warning;
+  }
+
+  
+}
