@@ -4,5 +4,10 @@
 // Your custom Sass files
 @use 'variables' as *;
 @use 'navbar' as *;
-@use 'buttons' as *;
+@use 'home' as *;
+@use 'about' as *;
+@use 'features' as *;
+@use 'solutions' as *;
+@use 'pricing' as *;
+@use 'contact' as *;
 

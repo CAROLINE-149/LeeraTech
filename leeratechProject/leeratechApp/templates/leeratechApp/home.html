@@ -2,9 +2,170 @@
 
 {% block content %}
  
-<div class="container py-5">
-    <h1 class="display-6">Welcome to the home page</h1>
-    <p>{{ welcomeMessage }}</p>  <!-- Passing Data to the frontEnd -->
-</div>
+<!--HERO SECTION-->
+<section class="hero">
+    <div class="container">
+        <h1 class="display-4 fw-bold">
+            Smart School Management for Modern Education
+        </h1>
+
+        <p class="lead mt-3">
+            LeeraTech helps schools manage student reports, attendance, fees, timetabes and CBE assessment all in one platform.
+        </p>
+
+        <div class="mt-4">
+            <a href="#" class="btn btn-success btn-lg me-3">Request Demo</a>
+            <a href="#" class="btn btn-outline-light btn-lg">Login</a>
+        </div>
+    </div>
+</section>
+
+<!--FEAtures-->
+<section class="py-5">
+
+    <div class="features">
+        <h2 class="text-center mb-5">Key Features</h2>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+
+                <div class="feature-card">
+                    <h5>Student Report Analysis</h5>
+                    <p>Automatically generate and analyse student academic reports.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+                     <h5>CBE Assessment</h5>
+                    <p>Support competency-based education assessments and grading.</p>
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+                    <h5>Attendance Tracking</h5>
+                    <p>Monitor student attendance digitally and generate reports.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+                    <h5>Fee Management</h5>
+                    <p>Track student fee payments and manage school financial records.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+                    <h5>Timetable Generation</h5>
+                    <p>Automatically create and manage school timetables.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="feature-card">
+                    <h5>Parent Portal</h5>
+                    <p>Parents can monitor attendance, grades, and fee balances.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--How it works-->
+<section class="bg-light py-5">
+    <div class="work">
+        <h2 class="text-center mb-5">How LeraaTech Works</h2>
+        <div class="row text-center">
+
+            <div class="col-md-3">
+                <h5>1. Schools Register</h5>
+                <p>Schools sign up and set up their system.</p>
+            </div>
+
+            <div class="col-md-3">
+                <h5>2. Teachers Manage Data</h5>
+                <p>Teachers record attendance, grades and assessments.</p>
+            </div>
+
+            <div class="col-md-3">
+                <h5>3. System Generates Reports</h5>
+                <p>LeraaTech automatically generates detailed reports.</p>
+            </div>
+
+            <div class="col-md-3">
+                <h5>4. Parents Track Progress</h5>
+                <p>Parents access reports through the parent portal.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="py-5">
+
+    <div class="container">
+
+        <h2 class="text-center mb-5">Benefits</h2>
+
+            <div class="row text-center">
+
+                <div class="col-md-3">
+                    <p>✔ Saves time for teachers</p>
+                </div>
+
+                <div class="col-md-3">
+                    <p>✔ Accurate report generation</p>
+                </div>
+
+                <div class="col-md-3">
+                    <p>✔ Real-time parent communication</p>
+                </div>
+
+                <div class="col-md-3">
+                    <p>✔ Better school management</p>
+                </div>
+
+            </div>
+
+    </div>
+
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="cta">
+
+    <div class="container">
+
+        <h2 class="mb-3">
+            Transform how your school manages academic data with LeeraTech
+        </h2>
+
+        <a href="#" class="btn btn-dark btn-lg">
+            Get Started
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4">
+
+    <p>© 2026 LeeraTech. All Rights Reserved.</p>
+
+</footer>
+
+
+
 
 {% endblock %}

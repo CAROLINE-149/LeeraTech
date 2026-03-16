@@ -11870,26 +11870,4 @@ textarea.form-control-lg {
   color: #ffffff;
 }
 
-.btn-primary {
-  background-color: #00AEEF;
-  color: #0F172A;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
-  transition: background-color 0.3s ease;
-}
-.btn-primary:hover {
-  background-color: rgb(20, 184, 132.8);
-}
-
-.btn-secondary {
-  background-color: #00AEEF;
-  color: #ffffff;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
-  transition: background-color 0.3s ease;
-}
-.btn-secondary:hover {
-  background-color: rgb(35, 195.1673640167, 255);
-}
-
 /*# sourceMappingURL=main.css.map */
