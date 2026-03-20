@@ -1,120 +1,270 @@
 {% extends 'base.html'%} {% block content %}
 
-<!-- HERO -->
-
-<section class="hero">
-  <div class="container">
-    <h1 class="display-5 fw-bold">Contact LeeraTech</h1>
-
-    <p class="lead mt-3">
-      Have questions or want to request a demo? We'd love to hear from you.
-    </p>
-  </div>
+<section class="contact-hero">
+  <div class="contact">
+  <h1>Contact Us</h1>
+  <p>LeeraTech simplifies school management with powerful tools for reports, attendance, fees, and timetables all in one easy-to-use platform.</p>
+</div>
 </section>
-
+  
 <!-- CONTACT SECTION -->
+<section class="contact-section">
+    <div class="container">
+        <div class="row g-5">
+            <!-- CONTACT INFO CARD -->
+            <div class="col-lg-5">
+                <div class="info-card">
+                    <div class="info-header">
+                        <span class="info-badge">📍 Connect With Us</span>
+                        <h3 class="info-title">Contact Information</h3>
+                        <p class="info-subtitle">We're here to help you 24/7</p>
+                    </div>
 
-<section class="py-5">
-  <div class="container">
-    <div class="row g-5">
-      <!-- CONTACT INFO -->
+                    <div class="info-items">
+                        <!-- Email -->
+                        <div class="info-item">
+                            <div class="info-icon email">
+                                <i class="bi bi-envelope-fill"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <div class="info-details">
+                                <span class="info-label">Email Us</span>
+                                <span class="info-value">info@leeratech.com</span>
+                                <span class="info-note">We reply within 2 hours</span>
+                            </div>
+                        </div>
 
-      <div class="col-md-5">
-        <div class="contact-card">
-          <h4 class="mb-4">Contact Information</h4>
+                        <!-- Phone -->
+                        <div class="info-item">
+                            <div class="info-icon phone">
+                                <i class="bi bi-telephone-fill"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <div class="info-details">
+                                <span class="info-label">Call Us</span>
+                                <span class="info-value">+254 700 123 456</span>
+                                <span class="info-note">Mon-Fri, 8am-6pm</span>
+                            </div>
+                        </div>
 
-          <p>
-            <i class="bi bi-envelope contact-icon"></i>
-            info@leeratech.com
-          </p>
+                        <!-- Location -->
+                        <div class="info-item">
+                            <div class="info-icon location">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <div class="info-details">
+                                <span class="info-label">Visit Us</span>
+                                <span class="info-value">Nairobi, Kenya</span>
+                                <span class="info-note">3rd Floor, Tech Tower</span>
+                            </div>
+                        </div>
+                    </div>
 
-          <p>
-            <i class="bi bi-telephone contact-icon"></i>
-            +254 700 123 456
-          </p>
+                    <!-- Office Hours -->
+                    <div class="office-hours">
+                        <h5 class="hours-title">
+                            <i class="bi bi-clock"></i>
+                            Office Hours
+                        </h5>
+                        <div class="hours-grid">
+                            <div class="hour-row">
+                                <span>Monday - Friday</span>
+                                <span class="hour-value">8:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hour-row">
+                                <span>Saturday</span>
+                                <span class="hour-value">9:00 AM - 2:00 PM</span>
+                            </div>
+                            <div class="hour-row">
+                                <span>Sunday</span>
+                                <span class="hour-value closed">Closed</span>
+                            </div>
+                        </div>
+                    </div>
 
-          <p>
-            <i class="bi bi-geo-alt contact-icon"></i>
-            Nairobi, Kenya
-          </p>
+                    <!-- Social Links -->
+                    <div class="social-section">
+                        <h5 class="social-title">Follow Us</h5>
+                        <div class="social-links">
+                            <a href="#" class="social-link facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link twitter">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link linkedin">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link youtube">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
 
-          <hr />
+                    <!-- Map Preview -->
+                    <div class="map-preview">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8462962765316!2d36.821946!3d-1.292066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d2b7f1b9c5%3A0x3b9c5d5c5b5c5b5c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
 
-          <h5>Follow Us</h5>
+            <!-- CONTACT FORM CARD -->
+            <div class="col-lg-7">
+                <div class="form-card">
+                    <div class="form-header">
+                        <span class="form-badge">📝 We'd Love to Hear From You</span>
+                        <h3 class="form-title">Send Us a Message</h3>
+                        <p class="form-subtitle">Fill out the form below and we'll get back to you within 2 hours</p>
+                    </div>
 
-          <div class="social mt-3">
-            <a href="#"><i class="bi bi-facebook"></i></a>
+                    <form class="contact-form">
+                        <div class="row g-3">
+                            <!-- Full Name -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        <i class="bi bi-person"></i>
+                                        Full Name
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        class="form-control" 
+                                        placeholder="John Doe"
+                                        required
+                                    >
+                                    <div class="input-focus-effect"></div>
+                                </div>
+                            </div>
 
-            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <!-- Email -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        <i class="bi bi-envelope"></i>
+                                        Email Address
+                                    </label>
+                                    <input 
+                                        type="email" 
+                                        class="form-control" 
+                                        placeholder="john@school.com"
+                                        required
+                                    >
+                                    <div class="input-focus-effect"></div>
+                                </div>
+                            </div>
 
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <!-- School Name -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        <i class="bi bi-building"></i>
+                                        School Name
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        class="form-control" 
+                                        placeholder="Your School Name"
+                                    >
+                                    <div class="input-focus-effect"></div>
+                                </div>
+                            </div>
 
-            <a href="#"><i class="bi bi-instagram"></i></a>
-          </div>
+                            <!-- Phone Number -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        <i class="bi bi-phone"></i>
+                                        Phone Number
+                                    </label>
+                                    <input 
+                                        type="tel" 
+                                        class="form-control" 
+                                        placeholder="+254 700 000 000"
+                                    >
+                                    <div class="input-focus-effect"></div>
+                                </div>
+                            </div>
+
+                            <!-- Subject -->
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        <i class="bi bi-tag"></i>
+                                        Subject
+                                    </label>
+                                    <select class="form-select">
+                                        <option selected>Select a subject</option>
+                                        <option>General Inquiry</option>
+                                        <option>Demo Request</option>
+                                        <option>Technical Support</option>
+                                        <option>Partnership</option>
+                                        <option>Billing Question</option>
+                                    </select>
+                                    <div class="input-focus-effect"></div>
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        <i class="bi bi-chat-dots"></i>
+                                        Your Message
+                                    </label>
+                                    <textarea 
+                                        class="form-control" 
+                                        rows="5" 
+                                        placeholder="Tell us how we can help you..."
+                                        required
+                                    ></textarea>
+                                    <div class="input-focus-effect"></div>
+                                </div>
+                            </div>
+
+                            <!-- Terms -->
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="termsCheck">
+                                    <label class="form-check-label" for="termsCheck">
+                                        I agree to the <a href="#" class="terms-link">Terms of Service</a> and 
+                                        <a href="#" class="terms-link">Privacy Policy</a>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="col-12">
+                                <button type="submit" class="btn-submit">
+                                    <span>Send Message</span>
+                                    <i class="bi bi-send"></i>
+                                    <div class="btn-glow"></div>
+                                </button>
+                            </div>
+
+                            <!-- Guarantee -->
+                            <div class="col-12">
+                                <p class="form-guarantee">
+                                    <i class="bi bi-shield-check"></i>
+                                    We respect your privacy. No spam, ever.
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <!-- CONTACT FORM -->
-
-      <div class="col-md-7">
-        <div class="contact-card">
-          <h4 class="mb-4">Send Us a Message</h4>
-
-          <form>
-            <div class="row mb-3">
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Full Name"
-                />
-              </div>
-
-              <div class="col">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Email Address"
-                />
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="School Name"
-              />
-            </div>
-
-            <div class="mb-3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Phone Number"
-              />
-            </div>
-
-            <div class="mb-3">
-              <textarea
-                class="form-control"
-                rows="5"
-                placeholder="Your Message"
-              ></textarea>
-            </div>
-
-            <button class="btn btn-success">Send Message</button>
-          </form>
-        </div>
-      </div>
     </div>
-  </div>
 </section>
 
-<!-- FOOTER -->
 
-<footer class="bg-dark text-white text-center py-4">
-  <p>© 2026 LeeraTech. All Rights Reserved.</p>
-</footer>
 
 {% endblock%}

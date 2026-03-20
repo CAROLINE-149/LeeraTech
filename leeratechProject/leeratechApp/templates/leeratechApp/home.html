@@ -1,171 +1,421 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %}
 
-{% block content %}
- 
 <!--HERO SECTION-->
 <section class="hero">
+    <!-- Decorative background elements -->
+    <div class="hero-bg-shape shape-1"></div>
+    <div class="hero-bg-shape shape-2"></div>
+    <div class="hero-bg-shape shape-3"></div>
+    
     <div class="container">
-        <h1 class="display-4 fw-bold">
-            Smart School Management for Modern Education
-        </h1>
+        <div class="hero-container">
+            <div class="hero-content">
+            
+                <h1 class="hero-title">
+                    Smart School Management 
+                    <span class="text-gradient">for Modern Education</span>
+                </h1>
 
-        <p class="lead mt-3">
-            LeeraTech helps schools manage student reports, attendance, fees, timetabes and CBE assessment all in one platform.
-        </p>
+                <p class="hero-text">
+                    LeeraTech helps schools manage student reports, attendance, fees,
+                    timetables and CBE assessment all in one powerful platform.
+                </p>
 
-        <div class="mt-4">
-            <a href="#" class="btn btn-success btn-lg me-3">Request Demo</a>
-            <a href="#" class="btn btn-outline-light btn-lg">Login</a>
+                <!-- Stats row -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Teacher satisfaction</span>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Support</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#" class="btn-primary">
+                        Request Demo
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="btn-login">
+                        <i class="fas fa-lock"></i>
+                        Login
+                    </a>
+                </div>
+
+                <!-- Trust badges -->
+                <div class="trust-badges">
+                    <p class="trust-text">✨ No credit card required · Free 14-day trial</p>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <!-- Main dashboard preview -->
+                <div class="image-frame">
+                    <img src="https://via.placeholder.com/600x500" alt="Dashboard Preview" class="main-image">
+                    
+                    <!-- Floating UI elements -->
+                    <div class="floating-card card-1">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Attendance +95%</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Reports ready</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <div class="avatar-group">
+                            <span>👥</span>
+                        </div>
+                        <span>24 online</span>
+                    </div>
+                </div>
+
+                <!-- Partner logos -->
+                <div class="partner-logos">
+                    <p class="partner-text">Trusted by leading institutions</p>
+                    <div class="logo-row">
+                        <span class="logo-placeholder">EduTrust</span>
+                        <span class="logo-placeholder">SchoolPro</span>
+                        <span class="logo-placeholder">LearnFast</span>
+                        <span class="logo-placeholder">EduTech</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
 <!--FEAtures-->
 <section class="py-5">
+  <div class="features">
+    <h2 class="text-center mb-5">Key Features</h2>
 
-    <div class="features">
-        <h2 class="text-center mb-5">Key Features</h2>
-
-        <div class="row g-4">
-            <div class="col-md-4">
-
-                <div class="feature-card">
-                    <h5>Student Report Analysis</h5>
-                    <p>Automatically generate and analyse student academic reports.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-
-                <div class="feature-card">
-                     <h5>CBE Assessment</h5>
-                    <p>Support competency-based education assessments and grading.</p>
-            </div>
-
-            <div class="col-md-4">
-
-                <div class="feature-card">
-                    <h5>Attendance Tracking</h5>
-                    <p>Monitor student attendance digitally and generate reports.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-
-                <div class="feature-card">
-                    <h5>Fee Management</h5>
-                    <p>Track student fee payments and manage school financial records.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-
-                <div class="feature-card">
-                    <h5>Timetable Generation</h5>
-                    <p>Automatically create and manage school timetables.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-
-                <div class="feature-card">
-                    <h5>Parent Portal</h5>
-                    <p>Parents can monitor attendance, grades, and fee balances.</p>
-                </div>
-            </div>
-
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature-card">
+          <img src="#" alt="report-analysis" class="feature-icon" />
+          <h5>Student Report Analysis</h5>
+          <p>Automatically generate and analyse student academic reports.</p>
         </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-card">
+          <img src="#" alt="CBE-assessment" class="feature-icon" />
+          <h5>CBE Assessment</h5>
+          <p>Support competency-based education assessments and grading.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-card">
+          <img src="#" alt="Attendance-Tracking" class="feature-icon" />
+          <h5>Attendance Tracking</h5>
+          <p>Monitor student attendance digitally and generate reports.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-card">
+          <img src="#" alt="fee-management" class="feature-icon" />
+          <h5>Fee Management</h5>
+          <p>Track student fee payments and manage school financial records.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-card">
+          <img src="#" alt="Timetable-generation" class="feature-icon" />
+          <h5>Timetable Generation</h5>
+          <p>Automatically create and manage school timetables.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-card">
+          <img src="#" alt="parent-portal" class="feature-icon" />
+          <h5>Parent Portal</h5>
+          <p>Parents can monitor attendance, grades, and fee balances.</p>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <!--How it works-->
-<section class="bg-light py-5">
-    <div class="work">
-        <h2 class="text-center mb-5">How LeraaTech Works</h2>
-        <div class="row text-center">
-
-            <div class="col-md-3">
-                <h5>1. Schools Register</h5>
-                <p>Schools sign up and set up their system.</p>
+<section class="how-it-works-alt py-5">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <!-- Left column with image -->
+            <div class="col-lg-6">
+                <div class="image-wrapper">
+                    <div class="main-image">
+                        <img src="https://via.placeholder.com/600x500" alt="School Management Dashboard" class="img-fluid">
+                    </div>
+                    
+                    <!-- Floating stats for visual interest -->
+                    <div class="floating-stat stat-1">
+                        <i class="fas fa-check-circle"></i>
+                        <span>500+ Schools</span>
+                    </div>
+                    <div class="floating-stat stat-2">
+                        <i class="fas fa-users"></i>
+                        <span>50K+ Students</span>
+                    </div>
+                    <div class="floating-stat stat-3">
+                        <i class="fas fa-star"></i>
+                        <span>98% Satisfaction</span>
+                    </div>
+                    
+                    <!-- Decorative elements -->
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                </div>
             </div>
-
-            <div class="col-md-3">
-                <h5>2. Teachers Manage Data</h5>
-                <p>Teachers record attendance, grades and assessments.</p>
+            
+            <!-- Right column with steps list -->
+            <div class="col-lg-6">
+                <div class="steps-content">
+                    <!-- Section header -->
+                    <div class="section-header mb-4">
+                        <span class="badge">HOW IT WORKS</span>
+                        <h2 class="display-5 fw-bold mt-3">Simple, Smart School Management</h2>
+                        <p class="lead text-muted">Four easy steps to transform your school administration</p>
+                    </div>
+                    
+                    <!-- Steps list -->
+                    <div class="steps-list">
+                        <!-- Step 1 -->
+                        <div class="step-item">
+                            <div class="step-marker">
+                                <span class="step-count">1</span>
+                                <div class="step-line"></div>
+                            </div>
+                            <div class="step-details">
+                                <div class="step-icon">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                                <div class="step-info">
+                                    <h4>Schools Register</h4>
+                                    <p>Schools sign up and set up their system in minutes with our easy onboarding process.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="step-item">
+                            <div class="step-marker">
+                                <span class="step-count">2</span>
+                                <div class="step-line"></div>
+                            </div>
+                            <div class="step-details">
+                                <div class="step-icon">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                </div>
+                                <div class="step-info">
+                                    <h4>Teachers Manage Data</h4>
+                                    <p>Teachers record attendance, grades and assessments through our intuitive dashboard.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3 -->
+                        <div class="step-item">
+                            <div class="step-marker">
+                                <span class="step-count">3</span>
+                                <div class="step-line"></div>
+                            </div>
+                            <div class="step-details">
+                                <div class="step-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="step-info">
+                                    <h4>System Generates Reports</h4>
+                                    <p>LeraaTech automatically generates detailed reports with actionable insights.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 4 -->
+                        <div class="step-item">
+                            <div class="step-marker">
+                                <span class="step-count">4</span>
+                            </div>
+                            <div class="step-details">
+                                <div class="step-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="step-info">
+                                    <h4>Parents Track Progress</h4>
+                                    <p>Parents access real-time reports through the dedicated parent portal.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Button -->
+                    <div class="mt-5">
+                        <a href="#" class="btn btn-primary btn-lg">Get Started Now <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
             </div>
-
-            <div class="col-md-3">
-                <h5>3. System Generates Reports</h5>
-                <p>LeraaTech automatically generates detailed reports.</p>
-            </div>
-
-            <div class="col-md-3">
-                <h5>4. Parents Track Progress</h5>
-                <p>Parents access reports through the parent portal.</p>
-            </div>
-
         </div>
     </div>
 </section>
 
 <!-- BENEFITS -->
-<section class="py-5">
-
+<section class="benefits-section py-5">
     <div class="container">
+        <div class="text-center mb-5">
+            <span class="benefits-badge">WHY CHOOSE US</span>
+            <h2 class="benefits-title">Powerful Benefits for Your School</h2>
+            <p class="benefits-subtitle">Transform your educational institution with our comprehensive platform</p>
+        </div>
 
-        <h2 class="text-center mb-5">Benefits</h2>
-
-            <div class="row text-center">
-
-                <div class="col-md-3">
-                    <p>✔ Saves time for teachers</p>
+        <div class="row g-4">
+            <!-- Benefit 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="benefit-heading">Saves time for teachers</h3>
+                    <p class="benefit-description">Reduce administrative work by up to 70% with automated processes and smart tools.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-number">70%</span>
+                        <span class="stat-label">time saved</span>
+                    </div>
                 </div>
-
-                <div class="col-md-3">
-                    <p>✔ Accurate report generation</p>
-                </div>
-
-                <div class="col-md-3">
-                    <p>✔ Real-time parent communication</p>
-                </div>
-
-                <div class="col-md-3">
-                    <p>✔ Better school management</p>
-                </div>
-
             </div>
 
-    </div>
+            <!-- Benefit 2 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="benefit-heading">Accurate report generation</h3>
+                    <p class="benefit-description">Generate error-free reports instantly with our intelligent data processing system.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">accuracy rate</span>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Benefit 3 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="benefit-heading">Real-time parent communication</h3>
+                    <p class="benefit-description">Keep parents informed with instant updates on their child's progress.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">access</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="benefit-heading">Better school management</h3>
+                    <p class="benefit-description">Streamline all operations from attendance to finances in one place.</p>
+                    <div class="benefit-stats">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">streamlined</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional: Add a CTA -->
+        <div class="text-center mt-5">
+            <a href="#" class="btn btn-benefits">View All Benefits <i class="fas fa-arrow-right ms-2"></i></a>
+        </div>
+    </div>
 </section>
 
 <!-- CALL TO ACTION -->
-<section class="cta">
-
+<section class="cta-section">
+    <!-- Decorative elements -->
+    <div class="cta-shape shape-1"></div>
+    <div class="cta-shape shape-2"></div>
+    <div class="cta-shape shape-3"></div>
+    
     <div class="container">
-
-        <h2 class="mb-3">
-            Transform how your school manages academic data with LeeraTech
-        </h2>
-
-        <a href="#" class="btn btn-dark btn-lg">
-            Get Started
-        </a>
-
+        <div class="cta-content">
+            <div class="cta-badge">
+                <span class="badge-pulse">✨</span>
+                <span>Limited Time Offer</span>
+            </div>
+            
+            <h2 class="cta-title">
+                Transform how your school manages 
+                <span class="text-gradient">academic data</span> 
+                with LeeraTech
+            </h2>
+            
+            <p class="cta-text">
+                Join 500+ schools already using LeeraTech to streamline their administration.
+                Start your free 14-day trial today. No credit card required.
+            </p>
+            
+            <div class="cta-stats">
+                <div class="cta-stat-item">
+                    <span class="cta-stat-number">14</span>
+                    <span class="cta-stat-label">Days free trial</span>
+                </div>
+                <div class="cta-stat-item">
+                    <span class="cta-stat-number">24/7</span>
+                    <span class="cta-stat-label">Support</span>
+                </div>
+                <div class="cta-stat-item">
+                    <span class="cta-stat-number">99%</span>
+                    <span class="cta-stat-label">Uptime</span>
+                </div>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="#" class="btn-primary">
+                    Get Started Now
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#" class="btn-outline">
+                    <i class="fas fa-play"></i>
+                    Watch Demo
+                </a>
+            </div>
+            
+            <div class="trust-indicators">
+                <div class="trust-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>No credit card required</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Cancel anytime</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Free onboarding</span>
+                </div>
+            </div>
+        </div>
     </div>
-
 </section>
-
-
 
 <!-- FOOTER -->
 <footer class="bg-dark text-white text-center py-4">
-
-    <p>© 2026 LeeraTech. All Rights Reserved.</p>
-
+  <p>© 2026 LeeraTech. All Rights Reserved.</p>
 </footer>
-
-
-
 
 {% endblock %}

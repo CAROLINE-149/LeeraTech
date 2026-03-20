@@ -2,15 +2,18 @@
 
 .navbar {
   background-color: variables.$success;
-  color: variables.$warning;
-  padding: variables.$spacer;
-  
+  padding: variables.$spacer-half;
+}
 
   .navbar-brand {
-    font-weight: variables.$heading-font-weight;
-    font-family: variables.$font-family-base;
-    color: variables.$warning;
+    width: 80;
+    height: 40;
+    padding: variables.$spacer-half;
   }
 
-  
-}
+  .nav-link{
+    color: variables.$warning;
+  }
+  .nav-link active{
+    color: variables.$warning;
+  }

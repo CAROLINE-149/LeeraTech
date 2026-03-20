@@ -1,8 +1,10 @@
+@use 'variables' as *;
+
 // Bootstrap (from node_modules)
 @use "../../node_modules/bootstrap/scss/bootstrap" as *;
 
 // Your custom Sass files
-@use 'variables' as *;
+
 @use 'navbar' as *;
 @use 'home' as *;
 @use 'about' as *;
@@ -10,4 +12,5 @@
 @use 'solutions' as *;
 @use 'pricing' as *;
 @use 'contact' as *;
+@use 'footer' as *;
 
