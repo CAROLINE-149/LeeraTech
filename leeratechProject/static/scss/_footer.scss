@@ -31,8 +31,8 @@
 /* Footer grid */
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
-    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
     margin-bottom: 60px;
 }
 
@@ -54,6 +54,7 @@
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 
 .footer-description {
@@ -130,11 +131,7 @@
 }
 
 /* Newsletter */
-.newsletter-text {
-    color: #a0a3b5;
-    font-size: 0.95rem;
-    margin-bottom: 15px;
-}
+
 
 .newsletter-form {
     display: flex;

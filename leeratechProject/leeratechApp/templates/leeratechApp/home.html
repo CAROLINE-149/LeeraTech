@@ -1,4 +1,5 @@
 {% extends 'base.html' %} {% block content %}
+{% load static %}
 
 <!--HERO SECTION-->
 <section class="hero">
@@ -16,7 +17,7 @@
                     <span class="text-gradient">for Modern Education</span>
                 </h1>
 
-                <p class="hero-text">
+                <p class="hero-text text-light">
                     LeeraTech helps schools manage student reports, attendance, fees,
                     timetables and CBE assessment all in one powerful platform.
                 </p>
@@ -54,7 +55,7 @@
             <div class="hero-image">
                 <!-- Main dashboard preview -->
                 <div class="image-frame">
-                    <img src="https://via.placeholder.com/600x500" alt="Dashboard Preview" class="main-image">
+                    <img src="{% static 'images/dashboard.jpeg'%}" alt="Dashboard Preview" class="main-image">
                     
                     <!-- Floating UI elements -->
                     <div class="floating-card card-1">
@@ -65,23 +66,13 @@
                         <i class="fas fa-chart-line"></i>
                         <span>Reports ready</span>
                     </div>
-                    <div class="floating-card card-3">
-                        <div class="avatar-group">
-                            <span>👥</span>
-                        </div>
-                        <span>24 online</span>
-                    </div>
+                    
                 </div>
 
                 <!-- Partner logos -->
-                <div class="partner-logos">
+                <div class="partner">
                     <p class="partner-text">Trusted by leading institutions</p>
-                    <div class="logo-row">
-                        <span class="logo-placeholder">EduTrust</span>
-                        <span class="logo-placeholder">SchoolPro</span>
-                        <span class="logo-placeholder">LearnFast</span>
-                        <span class="logo-placeholder">EduTech</span>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -96,7 +87,7 @@
     <div class="row g-4">
       <div class="col-md-4">
         <div class="feature-card">
-          <img src="#" alt="report-analysis" class="feature-icon" />
+          <img src="{% static 'images/report.jpeg' %}" alt="report-analysis" class="feature-icon" />
           <h5>Student Report Analysis</h5>
           <p>Automatically generate and analyse student academic reports.</p>
         </div>
@@ -112,7 +103,7 @@
 
       <div class="col-md-4">
         <div class="feature-card">
-          <img src="#" alt="Attendance-Tracking" class="feature-icon" />
+          <img src="{% static 'images/attendance.jpeg' %}" alt="Attendance-Tracking" class="feature-icon" />
           <h5>Attendance Tracking</h5>
           <p>Monitor student attendance digitally and generate reports.</p>
         </div>
@@ -120,7 +111,7 @@
 
       <div class="col-md-4">
         <div class="feature-card">
-          <img src="#" alt="fee-management" class="feature-icon" />
+          <img src="{% static 'images/fee-management.jpeg' %}" alt="fee-management" class="feature-icon" />
           <h5>Fee Management</h5>
           <p>Track student fee payments and manage school financial records.</p>
         </div>
@@ -136,7 +127,7 @@
 
       <div class="col-md-4">
         <div class="feature-card">
-          <img src="#" alt="parent-portal" class="feature-icon" />
+          <img src="{% static 'images/parent.jpeg' %}" alt="parent-portal" class="feature-icon" />
           <h5>Parent Portal</h5>
           <p>Parents can monitor attendance, grades, and fee balances.</p>
         </div>
@@ -153,22 +144,9 @@
             <div class="col-lg-6">
                 <div class="image-wrapper">
                     <div class="main-image">
-                        <img src="https://via.placeholder.com/600x500" alt="School Management Dashboard" class="img-fluid">
+                        <img src="{% static 'images/dashboard.jpeg' %}" alt="School Management Dashboard" class="img-fluid">
                     </div>
                     
-                    <!-- Floating stats for visual interest -->
-                    <div class="floating-stat stat-1">
-                        <i class="fas fa-check-circle"></i>
-                        <span>500+ Schools</span>
-                    </div>
-                    <div class="floating-stat stat-2">
-                        <i class="fas fa-users"></i>
-                        <span>50K+ Students</span>
-                    </div>
-                    <div class="floating-stat stat-3">
-                        <i class="fas fa-star"></i>
-                        <span>98% Satisfaction</span>
-                    </div>
                     
                     <!-- Decorative elements -->
                     <div class="shape shape-1"></div>
@@ -360,20 +338,13 @@
             
             <h2 class="cta-title">
                 Transform how your school manages 
-                <span class="text-gradient">academic data</span> 
+                <span class="text-cta">academic data</span> 
                 with LeeraTech
             </h2>
             
-            <p class="cta-text">
-                Join 500+ schools already using LeeraTech to streamline their administration.
-                Start your free 14-day trial today. No credit card required.
-            </p>
             
             <div class="cta-stats">
-                <div class="cta-stat-item">
-                    <span class="cta-stat-number">14</span>
-                    <span class="cta-stat-label">Days free trial</span>
-                </div>
+                
                 <div class="cta-stat-item">
                     <span class="cta-stat-number">24/7</span>
                     <span class="cta-stat-label">Support</span>
@@ -413,9 +384,5 @@
     </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center py-4">
-  <p>© 2026 LeeraTech. All Rights Reserved.</p>
-</footer>
 
 {% endblock %}
