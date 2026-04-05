@@ -1,6 +1,396 @@
-{% extends 'base.html'%}
+{% extends 'base.html'%} {% block content %} {% load static %}
 
-{% block content %}
+<!--PRICING HERO  -->
+<section class="pricing-hero">
 
+    <div class="hero-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    
+  <div class="hero-content">
+    <h1>
+      Affordable plans in <span class="highlight">Kenyan Shillings</span>
+    </h1>
+    <p>
+      Transparent pricing designed for schools in Kenya. No hidden fees, cancel
+      anytime.
+    </p>
+  </div>
+</section>
+
+<!-- PRICING PLANS -->
+<section class="section">
+  <div class="container-custom">
+    <div class="pricing-grid">
+
+      <!-- 1. BASIC PLAN -->
+      <div class="pricing-card">
+        <div class="plan-name">Basic</div>
+        <div class="plan-price">
+          <span class="price-currency">KES</span>
+          <span class="price-amount">3,500</span>
+          <span class="price-period">/month</span>
+        </div>
+        <div class="plan-description">For small schools & madrasas</div>
+        <ul class="features-list">
+          <li><i class="bi bi-check-lg"></i> Up to 100 students</li>
+          <li><i class="bi bi-check-lg"></i> Digital attendance</li>
+          <li><i class="bi bi-check-lg"></i> Fee management (basic)</li>
+          <li><i class="bi bi-check-lg"></i> Report cards generation</li>
+          <li><i class="bi bi-check-lg"></i> Email support (48h)</li>
+          <li><i class="bi bi-x-lg"></i> Parent mobile app</li>
+          <li><i class="bi bi-x-lg"></i> SMS notifications</li>
+        </ul>
+        <a href="#" class="btn-pricing">Choose Basic</a>
+      </div>
+
+      <!-- 2. STANDARD PLAN (POPULAR) -->
+      <div class="pricing-card" style="border: 2px solid #1b4a6e">
+        <div class="popular-badge">⭐ MOST POPULAR</div>
+        <div class="plan-name">Standard</div>
+        <div class="plan-price">
+          <span class="price-currency">KES</span>
+          <span class="price-amount">7,900</span>
+          <span class="price-period">/month</span>
+        </div>
+        <div class="plan-description">
+          Perfect for growing primary/secondary schools
+        </div>
+        <ul class="features-list">
+          <li><i class="bi bi-check-lg"></i> Up to 350 students</li>
+          <li><i class="bi bi-check-lg"></i> Advanced attendance + reports</li>
+          <li><i class="bi bi-check-lg"></i> Full fee tracking & receipts</li>
+          <li><i class="bi bi-check-lg"></i> Automated report cards</li>
+          <li><i class="bi bi-check-lg"></i> Timetable & exam scheduling</li>
+          <li><i class="bi bi-check-lg"></i> Parent & teacher mobile app</li>
+          <li><i class="bi bi-check-lg"></i> 500 SMS/month included</li>
+          <li><i class="bi bi-check-lg"></i> Priority chat support</li>
+        </ul>
+        <a href="#" class="btn-pricing btn-pricing-primary"
+          >Start 14-day trial</a
+        >
+      </div>
+
+      <!-- 3. PROFESSIONAL PLAN -->
+      <div class="pricing-card">
+        <div class="plan-name">Professional</div>
+        <div class="plan-price">
+          <span class="price-currency">KES</span>
+          <span class="price-amount">14,500</span>
+          <span class="price-period">/month</span>
+        </div>
+        <div class="plan-description">
+          For large schools & high student volume
+        </div>
+        <ul class="features-list">
+          <li><i class="bi bi-check-lg"></i> Up to 800 students</li>
+          <li><i class="bi bi-check-lg"></i> Everything in Standard +</li>
+          <li><i class="bi bi-check-lg"></i> Advanced analytics dashboard</li>
+          <li><i class="bi bi-check-lg"></i> Inventory & asset management</li>
+          <li><i class="bi bi-check-lg"></i> Library management system</li>
+          <li><i class="bi bi-check-lg"></i> 1,500 SMS/month</li>
+          <li><i class="bi bi-check-lg"></i> 24/7 priority support + phone</li>
+          <li><i class="bi bi-check-lg"></i> Staff payroll module</li>
+        </ul>
+        <a href="#" class="btn-pricing">Get Professional</a>
+      </div>
+
+      <!-- 4. ENTERPRISE / CUSTOM -->
+      <div class="pricing-card">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-price">
+          <span class="price-currency">KES</span>
+          <span class="price-amount">Custom</span>
+        </div>
+        <div class="plan-description">
+          For school groups, districts & large institutions
+        </div>
+        <ul class="features-list">
+          <li><i class="bi bi-check-lg"></i> Unlimited students</li>
+          <li><i class="bi bi-check-lg"></i> Everything in Professional +</li>
+          <li><i class="bi bi-check-lg"></i> Dedicated account manager</li>
+          <li><i class="bi bi-check-lg"></i> Custom integrations & API</li>
+          <li><i class="bi bi-check-lg"></i> On-site training & onboarding</li>
+          <li><i class="bi bi-check-lg"></i> Multi-branch consolidation</li>
+          <li><i class="bi bi-check-lg"></i> Unlimited SMS & calls</li>
+          <li><i class="bi bi-check-lg"></i> 99.9% uptime SLA</li>
+        </ul>
+        <a href="#" class="btn-pricing">Talk to sales</a>
+      </div>
+    </div>
+
+    <p
+      style="
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 0.85rem;
+        color: #5b6e8c;
+      "
+    >
+      <i class="bi bi-shield-check"></i> All plans include SSL security,
+      automatic backups, and free migration assistance. Annual billing saves 20%
+      on any plan.
+    </p>
+  </div>
+</section>
+
+<!--  FEATURE COMPARISON TABLE -->
+<section class="section section-alt">
+  <div class="container-custom">
+    <h2
+      style="
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color:#0F172A;
+      "
+    >
+      Compare plans side by side
+    </h2>
+    <p style="text-align: center; color: #6B7280; margin-bottom: 2rem">
+      Everything you need to choose the right fit for your school
+    </p>
+
+    <div class="comparison-section">
+      <div class="table-responsive">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Basic (KES 3,500)</th>
+              <th>Standard (KES 7,900)</th>
+              <th>Professional (KES 14,500)</th>
+              <th>Enterprise (Custom)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="feature-category">
+              <td colspan="5"><strong>📊 Capacity & Core</strong></td>
+            </tr>
+            <tr>
+              <td>Max students</td>
+              <td>100</td>
+              <td>350</td>
+              <td>800</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>Teacher & staff accounts</td>
+              <td>10</td>
+              <td>30</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>Attendance tracking</td>
+              <td><i class="bi bi-check-lg check-icon"></i> Basic</td>
+              <td><i class="bi bi-check-lg check-icon"></i> Advanced</td>
+              <td><i class="bi bi-check-lg check-icon"></i> +Analytics</td>
+              <td><i class="bi bi-check-lg check-icon"></i> Full</td>
+            </tr>
+
+            <tr class="feature-category">
+              <td colspan="5"><strong>💰 Finance & Fees</strong></td>
+            </tr>
+            <tr>
+              <td>Fee collection & invoices</td>
+              <td><i class="bi bi-check-lg check-icon"></i> Basic</td>
+              <td><i class="bi bi-check-lg check-icon"></i> Full</td>
+              <td><i class="bi bi-check-lg check-icon"></i> +Expenses</td>
+              <td><i class="bi bi-check-lg check-icon"></i> Advanced</td>
+            </tr>
+            <tr>
+              <td>Automated payment reminders</td>
+              <td><i class="bi bi-x-lg x-icon"></i></td>
+              <td><i class="bi bi-check-lg check-icon"></i></td>
+              <td><i class="bi bi-check-lg check-icon"></i></td>
+              <td><i class="bi bi-check-lg check-icon"></i></td>
+            </tr>
+
+            <tr class="feature-category">
+              <td colspan="5"><strong>📚 Academics & Operations</strong></td>
+            </tr>
+            <tr>
+              <td>Report cards & transcripts</td>
+              <td><i class="bi bi-check-lg check-icon"></i> Manual</td>
+              <td><i class="bi bi-check-lg check-icon"></i> Automated</td>
+              <td>
+                <i class="bi bi-check-lg check-icon"></i> Custom templates
+              </td>
+              <td><i class="bi bi-check-lg check-icon"></i> Full</td>
+            </tr>
+            <tr>
+              <td>Timetable generator</td>
+              <td><i class="bi bi-x-lg x-icon"></i></td>
+              <td><i class="bi bi-check-lg check-icon"></i></td>
+              <td><i class="bi bi-check-lg check-icon"></i></td>
+              <td><i class="bi bi-check-lg check-icon"></i></td>
+            </tr>
+            <tr>
+              <td>Exam & grade management</td>
+              <td>Basic</td>
+              <td><i class="bi bi-check-lg check-icon"></i> Pro</td>
+              <td><i class="bi bi-check-lg check-icon"></i> Advanced</td>
+              <td><i class="bi bi-check-lg check-icon"></i> Analytics</td>
+            </tr>
+
+            <tr class="feature-category">
+              <td colspan="5"><strong>📱 Communication & Access</strong></td>
+            </tr>
+            <tr>
+              <td>Parent/Teacher mobile app</td>
+              <td><i class="bi bi-x-lg x-icon"></i></td>
+              <td><i class="bi bi-check-lg check-icon"></i></td>
+              <td><i class="bi bi-check-lg check-icon"></i></td>
+              <td><i class="bi bi-check-lg check-icon"></i></td>
+            </tr>
+            <tr>
+              <td>SMS notifications (monthly)</td>
+              <td>0</td>
+              <td>500</td>
+              <td>1,500</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>Bulk email & announcements</td>
+              <td><i class="bi bi-check-lg check-icon"></i></td>
+              <td><i class="bi bi-check-lg check-icon"></i></td>
+              <td><i class="bi bi-check-lg check-icon"></i></td>
+              <td><i class="bi bi-check-lg check-icon"></i></td>
+            </tr>
+
+            <tr class="feature-category">
+              <td colspan="5"><strong>🛠️ Support & Extras</strong></td>
+            </tr>
+            <tr>
+              <td>Customer support</td>
+              <td>Email (48h)</td>
+              <td>Priority chat</td>
+              <td>24/7 + Phone</td>
+              <td>Dedicated manager</td>
+            </tr>
+            <tr>
+              <td>API access</td>
+              <td><i class="bi bi-x-lg x-icon"></i></td>
+              <td><i class="bi bi-x-lg x-icon"></i></td>
+              <td><i class="bi bi-check-lg check-icon"></i> Limited</td>
+              <td><i class="bi bi-check-lg check-icon"></i> Full custom</td>
+            </tr>
+            <tr>
+              <td>On-site training</td>
+              <td><i class="bi bi-x-lg x-icon"></i></td>
+              <td>Optional (+fee)</td>
+              <td>Included (1 day)</td>
+              <td>Included (full)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--FREQUENTLY ASKED QUESTIONS -->
+<section class="section">
+  <div class="container-custom">
+    <h2
+      style="
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: #0F172A;
+      "
+    >
+      Frequently asked questions
+    </h2>
+    <p style="text-align: center; color: #6B7280; margin-bottom: 2rem">
+      Pricing in KES — what you need to know
+    </p>
+
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h4>
+          <i class="bi bi-currency-exchange"></i> Are these prices in Kenyan
+          Shillings (KES)?
+        </h4>
+        <p>
+          Yes! All plans are billed in KES. No foreign exchange fees. What you
+          see is exactly what you pay.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h4>
+          <i class="bi bi-calendar-check"></i> Do you offer annual discounts?
+        </h4>
+        <p>
+          Absolutely. Pay annually and save 20% on any plan (Basic, Standard, or
+          Professional). Enterprise pricing is custom.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h4>
+          <i class="bi bi-person-plus"></i> What if I exceed the student limit?
+        </h4>
+        <p>
+          We offer flexible upgrades. You can move to the next tier anytime or
+          request a custom quote for your exact student count.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h4>
+          <i class="bi bi-credit-card"></i> Is there a setup fee or contract?
+        </h4>
+        <p>
+          No setup fees for Basic, Standard & Professional. Month-to-month
+          billing with no long-term contracts. Cancel anytime.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h4><i class="bi bi-shield-lock"></i> Can I try before buying?</h4>
+        <p>
+          Yes! The Standard plan includes a 14-day free trial — no credit card
+          required. Test all features with your real data.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h4><i class="bi bi-whatsapp"></i> Do you support M-PESA payments?</h4>
+        <p>
+          Yes! We integrate M-PESA for fee collection and also accept bank
+          transfers, cards, and mobile money for your subscription.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA BANNER ========== -->
+<section class="section section-alt">
+  <div class="container-custom">
+    <div class="cta-banner">
+      <h3>Need a custom plan for your school?</h3>
+      <p>
+        Talk to our Kenyan team — we’ll help you find the best pricing and
+        features.
+      </p>
+      <a href="#" class="btn-cta-white"
+        >Contact sales <i class="bi bi-telephone-fill"></i
+      ></a>
+      <p
+        style="
+          margin-top: 1.2rem;
+          font-size: 0.8rem;
+          color: rgba(255, 255, 255, 0.7);
+        "
+      >
+        Call or WhatsApp: +254 757 284998 | Email: joshuajuma039@gmail.com
+      </p>
+    </div>
+  </div>
+</section>
 
 {% endblock%}
