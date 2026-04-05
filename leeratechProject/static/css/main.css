@@ -12425,7 +12425,7 @@ body {
   background: #ffffff;
   border-radius: 15px;
   transition: 0.3s ease;
-  height: 200px;
+  height: 250px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 .features .feature-card .feature-card img {
@@ -12873,7 +12873,7 @@ body {
   display: block;
   font-size: 2rem;
   font-weight: 800;
-  color: #667eea;
+  color: #00AEEF;
   line-height: 1;
   margin-bottom: 5px;
 }
@@ -12888,7 +12888,7 @@ body {
 /* CTA Button */
 .btn-benefits {
   background: white;
-  color: #667eea;
+  color: #0F172A;
   padding: 12px 35px;
   border-radius: 50px;
   font-weight: 600;
