@@ -1,98 +1,58 @@
 {% load static %}
 
-<footer class="main-footer">
-    <!-- Wave effect at top of footer -->
-    <div class="footer-wave">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-    </div>
-    
-    <div class="container">
-        <div class="footer-grid">
-            <!-- Company Info -->
-            <div class="footer-col">
-                <div class="footer-logo">
-                    <span class="logo-icon"><img src="{% static 'images/logo.png' %}" 
-             alt="Leraatech Logo" width="100";
-             height="50";></span>
-                    <span class="logo-text">LeeraTech</span>
-                </div>
-                <p class="footer-description">
-                    Revolutionizing school management with smart, intuitive technology 
-                    that saves time and improves educational outcomes.
-                </p>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-facebook-f"><img src="{% static 'images/facebook.svg' %}" alt="facebook Logo" height="40px" width="40px"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"><img src="{% static 'images/x.svg' %}" alt="x Logo"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"><img src="{% static 'images/linkedin.svg' %}" alt="Linkedin Logo" height="40px" width="40px"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i><img src="{% static 'images/instagram.svg' %}" alt="instagram Logo" height="40px" width="40px"></a>
-                    <a href="#" class="social-link"><i class="fab fa-whatsapp"><img src="{% static 'images/whatsapp.svg' %}" alt="whatsapp Logo" height="40px" width="40px"></i></a>
-                </div>
-            </div>
-
-            <!-- Product Links -->
-            <div class="footer-col">
-                <h4 class="footer-title">Product</h4>
-                <ul class="footer-links">
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                </ul>
-            </div>
-
-    
-
-            <!-- Company -->
-            <div class="footer-col">
-                <h4 class="footer-title">Company</h4>
-                <ul class="footer-links">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Newsletter -->
-            <div class="footer-col">
-                <h4 class="footer-title">Stay Updated</h4>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" class="newsletter-input">
-                    <button type="submit" class="newsletter-btn">
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>joshuajuma039@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+254 757 284998</span>
-                    </div>
-                </div>
-            </div>
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Column 1: Logo + Short paragraph about LeeraTech -->
+      <div class="col-md-5">
+        <div class="footer-logo">
+          <div class="footer-logo-icon"><img src="{% static 'images/logo.png' %}" alt="LeeraTech Logo" width="100" height="60" /></div>
+          <span class="footer-brand">LeeraTech</span>
         </div>
-
-        <!-- Bottom Footer -->
-        <div class="footer-bottom">
-            <div class="footer-bottom-content">
-                <p class="copyright">
-                    © 2026 LeeraTech. All Rights Reserved. 
-                    <span class="separator">|</span>
-                    <a href="#">Privacy Policy</a>
-                    <span class="separator">|</span>
-                    <a href="#">Terms of Service</a>
-                    <span class="separator">|</span>
-                    <a href="#">Cookie Policy</a>
-                </p>
-                <div class="payment-methods">
-                    <i class="fab fa-cc-visa"></i>
-                    <i class="fab fa-cc-mastercard"></i>
-                    <i class="fab fa-cc-amex"></i>
-                    <i class="fab fa-cc-paypal"></i>
-                    <i class="fab fa-cc-stripe"></i>
-                </div>
-            </div>
+        <p class="footer-description">
+          LeeraTech simplifies school management with powerful tools for reports, attendance, fees, and timetables — all in one easy-to-use platform. Built for African schools, trusted by educators.
+        </p>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+          
         </div>
+      </div>
+
+      <!-- Column 2: Quick Links (same as navbar) -->
+      <div class="col-md-3">
+        <h5 class="footer-heading">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'features' %}">Features</a></li>
+          <li><a href="{% url 'solutions' %}">Solutions</a></li>
+          <li><a href="{% url 'pricing' %}">Pricing</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Contact & Support -->
+      <div class="col-md-4">
+        <h5 class="footer-heading">Get in Touch</h5>
+        <ul class="footer-links">
+          <li><i class="bi bi-envelope me-2"></i> <a href="mailto:joshuajuma039@gmail.com">joshuajuma039@gmail.com</a></li>
+          <li><i class="bi bi-telephone me-2"></i> <a href="tel:+254757284998">+254 757 284998</a></li>
+          
+        </ul>
+        <div class="mt-3">
+          <a href="#" class="btn-demo-nav" style="background: #1e293b; padding: 0.4rem 1.2rem; font-size: 0.8rem;">
+            <i class="bi bi-calendar-check"></i> Request Demo
+          </a>
+        </div>
+      </div>
     </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 LeeraTech — Empowering schools with smart technology. All rights reserved.</p>
+    </div>
+  </div>
 </footer>
