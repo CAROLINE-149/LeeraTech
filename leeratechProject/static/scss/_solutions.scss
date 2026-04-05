@@ -1,3 +1,5 @@
+@use 'variables';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 /* ========== HERO SECTION ========== */
 .solutions-hero {
@@ -5,7 +7,7 @@
     min-height: 80vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #f8faff 0%, #f0f4ff 100%);
     overflow: hidden;
     padding: 100px 0;
 }
@@ -23,8 +25,9 @@
 .particle {
     position: absolute;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
+    background: variables.$primary;
     animation: float 20s ease-in-out infinite;
+    opacity: 0.3;
 }
 
 .particle:nth-child(1) {
@@ -40,7 +43,8 @@
     bottom: -200px;
     right: -100px;
     animation-delay: -5s;
-    background: rgba(255, 215, 0, 0.1);
+    background: variables.$secondary;
+    opacity: 0.3;
 }
 
 .particle:nth-child(3) {
@@ -57,7 +61,8 @@
     bottom: 20%;
     left: 10%;
     animation-delay: -8s;
-    background: rgba(255, 255, 255, 0.05);
+    background: variables.$secondary;
+    opacity: 0.3;
 }
 
 @keyframes float {
@@ -78,25 +83,7 @@
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    color: white;
-}
-
-.hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    padding: 10px 25px;
-    border-radius: 50px;
-    margin-bottom: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    animation: slideDown 0.8s ease-out;
-}
-
-.badge-icon {
-    font-size: 1.2rem;
-    animation: bounce 2s ease-in-out infinite;
+    color: variables.$info;
 }
 
 @keyframes bounce {
@@ -121,7 +108,7 @@
     display: block;
     font-size: 4rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #ffd700 0%, #ffa500 50%, #ff8c00 100%);
+    background:linear-gradient(135deg, variables.$primary 0%, variables.$secondary 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -139,34 +126,6 @@
     animation: slideUp 0.8s ease-out 0.4s both;
 }
 
-.hero-stats {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 40px;
-    animation: slideUp 0.8s ease-out 0.6s both;
-}
-
-.stat-item {
-    text-align: center;
-}
-
-.stat-number {
-    display: block;
-    font-size: 2rem;
-    font-weight: 800;
-    color: #ffd700;
-    line-height: 1;
-    margin-bottom: 5px;
-}
-
-.stat-label {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    opacity: 0.9;
-}
-
 .hero-actions {
     display: flex;
     gap: 20px;
@@ -179,7 +138,7 @@
     align-items: center;
     gap: 10px;
     background: white;
-    color: #667eea;
+    color: variables.$secondary;
     padding: 15px 35px;
     border-radius: 50px;
     text-decoration: none;
@@ -204,26 +163,6 @@
     transform: translateX(5px);
 }
 
-.btn-outline {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: transparent;
-    color: white;
-    padding: 15px 35px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    transition: all 0.3s ease;
-}
-
-.btn-outline:hover {
-    background: white;
-    color: #667eea;
-    border-color: white;
-}
 
 .hero-wave {
     position: absolute;
@@ -296,7 +235,7 @@
 
 .section-badge {
     display: inline-block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, variables.$secondary 0%, variables.$primary 100%);
     color: white;
     font-size: 0.9rem;
     font-weight: 600;
@@ -310,13 +249,13 @@
 .section-title {
     font-size: 2.5rem;
     font-weight: 800;
-    color: #1e1b4b;
+    color: variables.$success;
     margin-bottom: 15px;
 }
 
 .section-subtitle {
     font-size: 1.1rem;
-    color: #6b7280;
+    color: variables.$info;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -357,7 +296,7 @@
 }
 
 .card-back {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, variables.$secondary 0%, variables.$primary 100%);
     color: white;
     transform: rotateY(180deg);
 }
@@ -414,11 +353,11 @@
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 10px;
-    color: #1e1b4b;
+    color: variables.$success;
 }
 
 .card-desc {
-    color: #6b7280;
+    color: variables.$info;
     font-size: 0.95rem;
     line-height: 1.5;
     margin-bottom: 15px;
@@ -484,7 +423,7 @@
 /* Bottom CTA */
 .bottom-cta {
     margin-top: 80px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, variables.$secondary 0%, variables.$primary 100%);
     border-radius: 30px;
     padding: 60px 40px;
     text-align: center;
@@ -527,7 +466,7 @@
     align-items: center;
     gap: 10px;
     background: white;
-    color: #667eea;
+    color: variables.$secondary;
     padding: 15px 40px;
     border-radius: 50px;
     text-decoration: none;

@@ -1,27 +1,68 @@
 /* Import Bootstrap Icons */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@use 'variables';
 
 .features-hero {
-  background: linear-gradient(135deg, #0d6efd, #4e73df);
-  color: #fff;
-  padding: 80px 20px;
+  background: linear-gradient(135deg, variables.$primary 0%, variables.$secondary 100%);
+  color: variables.$success;
+  padding: 100px 20px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
 
-  .features {
-    max-width: 700px;
-    margin: 0 auto;
+/* Decorative background effect */
+.features-hero::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.15) 0%, transparent 60%),
+              radial-gradient(circle at 70% 70%, rgba(255,255,255,0.1) 0%, transparent 60%);
+  animation: heroShift 20s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes heroShift {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.features {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Heading */
+.features h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Description */
+.features p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: variables.$info;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .features-hero {
+    padding: 70px 15px;
   }
-
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 15px;
+  .features h1 {
+    font-size: 2.2rem;
   }
-
-  p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    opacity: 0.9;
+  .features p {
+    font-size: 1rem;
   }
 }
 
@@ -67,7 +108,7 @@
 /* Feature Icon */
 .feature-icon {
     font-size: 3.5rem;
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, variables.$primary 0%, variables.$secondary 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -85,7 +126,7 @@
 .feature-section h3 {
     font-size: 2rem;
     font-weight: 700;
-    color: #1e1b4b;
+    color: variables.$success;
     margin-bottom: 20px;
     line-height: 1.3;
     position: relative;
@@ -99,7 +140,7 @@
     left: 0;
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, #4f46e5, #7c3aed);
+    background: linear-gradient(90deg, variables.$primary, variables.$secondary);
     border-radius: 2px;
     transition: width 0.3s ease;
 }
@@ -116,7 +157,7 @@
 /* Paragraphs */
 .feature-section p {
     font-size: 1.1rem;
-    color: #4b5563;
+    color: variables.$info;
     line-height: 1.6;
     margin-bottom: 25px;
 }
@@ -131,8 +172,8 @@
 .feature-section li {
     position: relative;
     padding: 10px 0 10px 35px;
-    font-size: 1rem;
-    color: #374151;
+    font-size: 0.95rem;
+    color: variables.$info;
     border-bottom: 1px dashed #e5e7eb;
     transition: all 0.3s ease;
 }
@@ -149,7 +190,7 @@
     transform: translateY(-50%);
     width: 24px;
     height: 24px;
-    background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, #00AEEF  0%, #19E6A6 100%);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -163,7 +204,7 @@
 
 .feature-section li:hover {
     transform: translateX(10px);
-    color: #4f46e5;
+    color: variables.$secondary;
 }
 
 .feature-section li:hover::before {
